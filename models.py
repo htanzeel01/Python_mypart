@@ -52,5 +52,4 @@ class_schema = ClassSchema(many=True) #many objects
 student_schema = StudentSchema()
 people_schema = StudentSchema(many=True)
 with app.app_context():
-    db.drop_all()
     db.create_all()
